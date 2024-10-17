@@ -13,7 +13,7 @@
 
 .sidebar-mainbox {
   height: 100vh;
-  min-width: 300px;
+  min-width: 250px;
   background-color: black;
   position: fixed;
   z-index: 50;
@@ -24,9 +24,11 @@
 
 .list-box {
   color: white;
+
 }
 .inside-box {
   padding: 50px 0px;
+  max-height: 400px;
 }
 .list-items {
   /* background-color: white; */
@@ -38,8 +40,29 @@
   margin: 5px 0px;
   font-weight: 600;
   cursor: pointer;
+  overflow-y: auto;
+  
 }
 
 .list-items:hover {
   background-color: grey;
+}
+
+.last-box {
+  display: flex;
+  align-items: end;
+
+  position: relative;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  z-index: 50;
+  background: transparent;
+  backdrop-filter: blur(60px);
+}
+.last-inside {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
 }

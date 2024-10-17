@@ -1,8 +1,8 @@
 import React from "react";
 import "./responsivesider.css";
 import { motion } from "framer-motion";
-import { listslide, menuslide } from "./FramerLogic";
-import { ListData } from "./data";
+import { iconBox, iconslide, listslide, menuslide } from "./FramerLogic";
+import { lasticon, ListData } from "./data";
 
 const ResponsivesideBar = () => {
   return (
@@ -32,6 +32,29 @@ const ResponsivesideBar = () => {
           })}
         </div>
       </div>
+      <motion.div
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        className="last-box"
+      >
+        <div className="last-inside">
+          {lasticon.map((v, i) => {
+            return (
+              <motion.div
+                key={i}
+                custom={i}
+                variants={iconslide}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+              >
+                {v.icon}
+              </motion.div>
+            );
+          })}
+        </div>
+      </motion.div>
     </motion.div>
   );
 };
