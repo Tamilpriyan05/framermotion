@@ -3,6 +3,7 @@ import "./responsivesider.css";
 import { motion } from "framer-motion";
 import { iconBox, iconslide, listslide, menuslide } from "./FramerLogic";
 import { lasticon, ListData } from "./data";
+import Curve from "./Curve";
 
 const ResponsivesideBar = () => {
   return (
@@ -55,6 +56,7 @@ const ResponsivesideBar = () => {
           })}
         </div>
       </motion.div>
+      <Curve />
     </motion.div>
   );
 };

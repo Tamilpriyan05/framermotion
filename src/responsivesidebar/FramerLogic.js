@@ -1,13 +1,13 @@
 export const menuslide = {
   initial: {
-    x: "100%",
+    x: "calc(100% + 100px)",
   },
   enter: {
     x: "0",
     transition: { duration: 0.8, ease: [0.45, 0, 0.55, 1] },
   },
   exit: {
-    x: "100%",
+    x: "calc(100% + 100px)",
     transition: { duration: 0.8, ease: [0.45, 0, 0.55, 1] },
   },
 };

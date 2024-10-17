@@ -3,6 +3,8 @@ import "./App.css";
 
 import ResponsivesideBar from "./responsivesidebar/ResponsivesideBar";
 import { AnimatePresence } from "framer-motion";
+import ShortTextIcon from "@mui/icons-material/ShortText";
+import CloseIcon from "@mui/icons-material/Close";
 
 function App() {
   const [siderBarStatus, setSiderBarStatus] = useState(false);
@@ -13,7 +15,11 @@ function App() {
           onClick={() => setSiderBarStatus(!siderBarStatus)}
           className="menu-button"
         >
-          {siderBarStatus ? "X" : "="}
+          {siderBarStatus ? (
+            <CloseIcon sx={{ color: "white", fontSize: "40px" }} />
+          ) : (
+            <ShortTextIcon sx={{ color: "black", fontSize: "40px" }} />
+          )}
         </button>
       </div>
       <AnimatePresence mode="wait">

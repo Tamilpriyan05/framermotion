@@ -4,7 +4,8 @@
   right: 30px;
   top: 20px;
   padding: 10px 15px;
-  background-color: black;
+  /* background-color: black; */
+  background: transparent;
   color: white;
   border-radius: 50%;
   border: none;
@@ -13,7 +14,7 @@
 
 .sidebar-mainbox {
   height: 100vh;
-  min-width: 250px;
+  min-width: 200px;
   background-color: black;
   position: fixed;
   z-index: 50;
@@ -24,7 +25,6 @@
 
 .list-box {
   color: white;
-
 }
 .inside-box {
   padding: 50px 0px;
@@ -41,7 +41,6 @@
   font-weight: 600;
   cursor: pointer;
   overflow-y: auto;
-  
 }
 
 .list-items:hover {
@@ -65,4 +64,14 @@
   justify-content: space-between;
   width: 100%;
   padding: 10px;
+}
+
+.svgcurver {
+  position: absolute;
+  top: 0;
+  left: -90px;
+  width: 100px;
+  height: 100%;
+  fill: black;
+  stroke: none;
 }
